@@ -7,7 +7,7 @@ const Home = () => {
         <div className="flex justify-center items-center mt-36">
             <div className="flex flex-col gap-12">    
                     <img src={myPhoto} className='w-64 h-64 rounded-full border-4 m-auto' />
-                    <h1 className="text-black font-medium text-4xl text-center m-0 w-auto h-auto font-['Satoshi Regular']">MARCO ALONSO BENEGAS</h1>
+                    <h1 className="text-black font-medium text-4xl text-center m-0 w-auto h-auto font-['Satoshi Regular']">MARCO ALONSO BENEGAS GARCÍA</h1>
                     <h2 className="text-black font-medium text-3xl font-['Tanker']">Programador Full Stack</h2>
                     <div className='flex justify-center items-center gap-8'>
                         <img src={githubLogo} className="w-10 h-10 cursor-pointer"></img>

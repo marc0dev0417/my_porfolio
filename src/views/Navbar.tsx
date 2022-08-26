@@ -1,9 +1,7 @@
 import 'tailwindcss/tailwind.css'
 import { Link } from 'react-router-dom'
-import logoSpain from '../utils/spain.png'
 
 const optionsMenu: string[] = ['Inicio', 'Acerca de', 'Proyectos', 'Siguientes Proyectos', 'Contacto']
-
 
 const Navbar = () => {
 
@@ -13,6 +11,7 @@ const Navbar = () => {
         menu!!.classList.toggle('w-full');
         menu!!.classList.toggle('h-screen');
     }
+    
     const renderRoutesLink = (element: string) => {
         switch (element) {
             case 'Inicio':
@@ -31,12 +30,12 @@ const Navbar = () => {
     }
 
     return (
-        <div className="container px-4 md:px-0 h-full mx-auto flex justify-between items-center pt-5">
+        <div className="container px-4 md:px-0 h-full w-full mx-auto flex justify-between items-center pt-5 sticky top-0">
 
             <Link className="text-yellow-400 text-xl font-bold italic" to="/">Marco<span
-                className="text-black">DEV</span></Link>
+                className="text-black">Benegas</span></Link>
 
-            <ul id="menu" className="hidden fixed top-0 right-0 px-10 py-16 bg-gray-800 z-50
+            <ul id="menu" className="hidden fixed top-0 right-0 px-10 py-16 bg-[#83c5be] z-50
                 md:relative md:flex md:p-0 md:bg-transparent md:flex-row md:space-x-6">
 
                 <li className="md:hidden z-90 fixed top-4 right-6">
@@ -48,9 +47,9 @@ const Navbar = () => {
                         <Link className="text-black opacity-70 hover:opacity-100 duration-300" to={renderRoutesLink(element)}>{element}</Link>
                     </li>)}
 
-                <select name="select" className='bg-gray-600' defaultValue={'🇪🇸'}>
-                    <option value="value1">🇪🇸</option>
-                    <option value="value2">🇮🇳</option>
+                <select name="select" className='bg-[#83c5be]' defaultValue={'🇪🇸'} onChange={(e => { console.log(e.currentTarget.value) })}>
+                    <option value="Spanish">🇪🇸</option>
+                    <option value="English">🇮🇳</option>
                 </select>
             </ul>
             <div className="flex items-center md:hidden">
