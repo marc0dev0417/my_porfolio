@@ -19,8 +19,8 @@ const Projects = () => {
                         <h2 className="font-['Tanker'] font-bold">TASK MANAGER</h2>
                         <p className="text-left text-lg font-['Tanker']">Aplicación web para gestionar proyectos (Beta)</p>
                         <div className='flex justify-center items-center gap-12'>
-                            <img src={githubLogo} className="w-10 h-10 cursor-pointer" />
-                            <img src={eyeLogo} className="w-10 h-10 cursor-pointer" />
+                            <img src={githubLogo} className="w-10 h-10 cursor-pointer hover:scale-125" />
+                            <img src={eyeLogo} className="w-10 h-10 cursor-pointer hover:scale-125" />
                         </div>
                         <div className='flex justify-center items-center'>
                             <h2 className="font-['Tanker'] font-bold">TECNOLOGIES</h2>
@@ -29,7 +29,7 @@ const Projects = () => {
                             <img src={tsLogo} className="w-10 h-10" />
                             <img src={atomLogo} className="w-10 h-10" />
                         </div>
-                    </div>
+                    </div>  
                 </div>
             </div>
         </>

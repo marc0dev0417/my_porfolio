@@ -10,8 +10,8 @@ const Home = () => {
                     <h1 className="text-black font-medium text-4xl text-center m-0 w-auto h-auto font-['Satoshi Regular']">MARCO ALONSO BENEGAS GARCÍA</h1>
                     <h2 className="text-black font-medium text-3xl font-['Tanker']">Programador Full Stack</h2>
                     <div className='flex justify-center items-center gap-8'>
-                        <img src={githubLogo} className="w-10 h-10 cursor-pointer"></img>
-                        <img src={likLogo} className="w-10 h-10 cursor-pointer"></img>
+                        <img src={githubLogo} className="w-10 h-10 cursor-pointer hover:scale-125"></img>
+                        <img src={likLogo} className="w-10 h-10 cursor-pointer hover:scale-125"></img>
                     </div>
                     <button className='border w-36 m-auto bg-white'>Descargar CV</button>
             </div>

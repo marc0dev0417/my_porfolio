@@ -1,5 +1,5 @@
 import 'tailwindcss/tailwind.css'
-import { Link } from 'react-router-dom'
+import { HashLink, HashLink as Link } from 'react-router-hash-link';
 
 const optionsMenu: string[] = ['Inicio', 'Acerca de', 'Proyectos', 'Siguientes Proyectos', 'Contacto']
 
@@ -17,7 +17,7 @@ const Navbar = () => {
             case 'Inicio':
                 return '/inicio'
             case 'Acerca de':
-                return '/acerca_de'
+                return '/#container_about_me'
             case 'Proyectos':
                 return 'proyectos'
             case 'Siguientes Proyectos':
@@ -30,7 +30,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className="container px-4 md:px-0 h-full w-full mx-auto flex justify-between items-center pt-5 sticky top-0">
+        <div className="container px-4 md:px-0 h-full w-full mx-auto flex justify-between items-center pt-5 sticky top-0 bg-[#f1faee]">
 
             <Link className="text-yellow-400 text-xl font-bold italic" to="/">Marco<span
                 className="text-black">Benegas</span></Link>
@@ -44,10 +44,10 @@ const Navbar = () => {
                 </li>
                 {optionsMenu.map((element, index) =>
                     <li key={index}>
-                        <Link className="text-black opacity-70 hover:opacity-100 duration-300" to={renderRoutesLink(element)}>{element}</Link>
+                        <HashLink smooth className="text-black opacity-70 hover:opacity-100 duration-300" to={renderRoutesLink(element)}>{element}</HashLink>
                     </li>)}
 
-                <select name="select" className='bg-[#83c5be]' defaultValue={'🇪🇸'} onChange={(e => { console.log(e.currentTarget.value) })}>
+                <select name="select" className='bg-[#f1faee]' defaultValue={'🇪🇸'} onChange={(e => { console.log(e.currentTarget.value) })}>
                     <option value="Spanish">🇪🇸</option>
                     <option value="English">🇮🇳</option>
                 </select>
