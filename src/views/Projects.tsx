@@ -1,38 +1,72 @@
-import taskManager from '../utils/task_manager.png'
-import githubLogo from '../utils/github.svg'
-import eyeLogo from '../utils/ver.png'
-import tsLogo from '../utils/typescript.png'
-import atomLogo from '../utils/atom-symbol.png'
+import CardProyect from '../components/CardProyect'
+
+import { reactIcon, tsLogo } from '../utils/tech_icon/TechIcons'
+import { taskManagerLogo } from '../utils/project_image/ProjectImages'
+import { githubLogo, eyeLogo } from '../utils/hover_icon/HoverIcons'
+import {ImageHover, ImageTech} from '../components/Image'
+
 
 const Projects = () => {
     return (
-        <>
+        <div id='container_projects'>
             <div className="flex items-center justify-center mt-56">
-                <div className="border bg-[#a8dadc]">
+                <div className="">
                     <h2 className="p-2 text-black font-medium text-3xl font-['Tanker']">Proyectos Desarrollados</h2>
                 </div>
             </div>
             <div className="flex justify-center items-center mt-10 gap-44 flex-wrap">
-                <div className='flex gap-12 border justify-center items-center bg-[#a8dadc] p-10 flex-wrap'>
-                    <img className='w-60 h-auto' src={taskManager} />
-                    <div className='flex flex-col items-center gap-3 flex-wrap'>
-                        <h2 className="font-['Tanker'] font-bold">TASK MANAGER</h2>
-                        <p className="text-left text-lg font-['Tanker']">Aplicación web para gestionar proyectos (Beta)</p>
-                        <div className='flex justify-center items-center gap-12'>
-                            <img src={githubLogo} className="w-10 h-10 cursor-pointer hover:scale-125" />
-                            <img src={eyeLogo} className="w-10 h-10 cursor-pointer hover:scale-125" />
-                        </div>
-                        <div className='flex justify-center items-center'>
-                            <h2 className="font-['Tanker'] font-bold">TECNOLOGIES</h2>
-                        </div>
-                        <div className='flex justify-center items-center gap-12 flex-wrap'>
-                            <img src={tsLogo} className="w-10 h-10" />
-                            <img src={atomLogo} className="w-10 h-10" />
-                        </div>
-                    </div>  
-                </div>
+                
+                <CardProyect 
+                srcProject={taskManagerLogo} 
+                nameProject='TASK MANAGER' 
+                descriptionProject='This is to develop'
+                elementImgGit={<ImageHover src={githubLogo}/>}
+                elementImgDemo={<ImageHover src={eyeLogo}/>} 
+                elementImgOne={<ImageTech src={tsLogo}/>} 
+                elementImgTwo={<ImageTech src={reactIcon}/>}
+                /> 
+                
+                <CardProyect 
+                srcProject={taskManagerLogo} 
+                nameProject='TASK MANAGER' 
+                descriptionProject='This is to develop'
+                elementImgGit={<ImageHover src={githubLogo}/>}
+                elementImgDemo={<ImageHover src={eyeLogo}/>} 
+                elementImgOne={<ImageTech src={tsLogo}/>} 
+                elementImgTwo={<ImageTech src={reactIcon}/>}
+                /> 
+                
+                <CardProyect 
+                srcProject={taskManagerLogo} 
+                nameProject='TASK MANAGER' 
+                descriptionProject='This is to develop'
+                elementImgGit={<ImageHover src={githubLogo}/>}
+                elementImgDemo={<ImageHover src={eyeLogo}/>} 
+                elementImgOne={<ImageTech src={tsLogo}/>} 
+                elementImgTwo={<ImageTech src={reactIcon}/>}
+                /> 
+                
+                <CardProyect 
+                srcProject={taskManagerLogo} 
+                nameProject='TASK MANAGER' 
+                descriptionProject='This is to develop'
+                elementImgGit={<ImageHover src={githubLogo}/>}
+                elementImgDemo={<ImageHover src={eyeLogo}/>} 
+                elementImgOne={<ImageTech src={tsLogo}/>} 
+                elementImgTwo={<ImageTech src={reactIcon}/>}
+                /> 
+                
+                <CardProyect 
+                srcProject={taskManagerLogo} 
+                nameProject='TASK MANAGER' 
+                descriptionProject='This is to develop'
+                elementImgGit={<ImageHover src={githubLogo}/>}
+                elementImgDemo={<ImageHover src={eyeLogo}/>} 
+                elementImgOne={<ImageTech src={tsLogo}/>} 
+                elementImgTwo={<ImageTech src={reactIcon}/>}
+                /> 
             </div>
-        </>
+        </div>
     )
 }
 export default Projects
