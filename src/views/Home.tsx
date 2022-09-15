@@ -11,7 +11,7 @@ const Home = () => {
                     <h1 className="text-black font-medium text-4xl text-center m-0 w-auto h-auto font-['Satoshi Regular']">MARCO ALONSO BENEGAS GARCÍA</h1>
                     <h2 className="text-black font-medium text-3xl font-['Tanker']">Programador Full Stack</h2>
                     <div className='flex justify-center items-center gap-8'>
-                        <ImageHover src={githubLogo}/>
+                        <ImageHover hrefSrc='https://github.com/marc0dev0417' src={githubLogo}/>
                         <ImageHover src={likLogo}/>
                     </div>
                     <button className='border w-36 m-auto bg-white'>Descargar CV</button>

@@ -12,7 +12,7 @@ const Projects = () => {
             </div>
             <div className="flex justify-center items-center mt-10 gap-44 flex-wrap">
                 {projectList.map((e, index) => 
-                    e.demoLogo === undefined ?  <CardProyect
+                    e.demoLogo === undefined ?  <CardProyect key={index}
                     srcProject={e.srcProject}
                     nameProject={e.nameProject}
                     descriptionProject={e.descriptionProject}
@@ -21,7 +21,7 @@ const Projects = () => {
                     elementImgTwo={<ImageTech src={e.srcTwo} />}
                     />
                     :
-                     <CardProyect
+                     <CardProyect key={index}
                      srcProject={e.srcProject}
                      nameProject={e.nameProject}
                      descriptionProject={e.descriptionProject}

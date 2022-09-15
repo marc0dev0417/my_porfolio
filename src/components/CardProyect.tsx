@@ -2,7 +2,7 @@ import { Project } from "../Type/Project"
 
 const CardProyect = (prop: Project) => {
     return (
-        <div className='flex gap-12 border justify-center items-center bg-[#a8dadc] p-10 flex-wrap w-2/4'>
+        <div className='flex gap-12 border justify-center items-center bg-[#c3c3c3] p-10 flex-wrap w-2/4'>
             <img className='w-60 h-auto hover:scale-125' src={prop.srcProject} alt={''}/>
             <div className='flex flex-col items-center gap-3 flex-wrap w-60'>
                 <h2 className="font-['Tanker'] font-bold">{prop.nameProject}</h2>

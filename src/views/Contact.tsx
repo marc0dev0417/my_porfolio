@@ -26,7 +26,7 @@ const Contact = () => {
             <div className="flex justify-center items-center mt-56 p-40 gap-8 flex-wrap">
                 <div>
                     <h2 className="p-2 text-black font-medium text-3xl font-['Tanker']">Contactame</h2>
-                    <p className="text-left">Si tiene alguna pregunta acerca de mi o simplemente quiere comentarme<br />algún asunto,puede contactarme a través de este formulario o por mi LinkedIn.</p>
+                    <p className="text-left">Si tiene alguna pregunta acerca de mi o simplemente quiere comentarme<br />algún asunto, puede contactarme a través de este formulario o por mi LinkedIn.</p>
                 </div>
                 <div className="flex-col gap-5 flex-wrap">
                     <div>

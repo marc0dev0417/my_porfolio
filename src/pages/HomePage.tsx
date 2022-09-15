@@ -3,6 +3,7 @@ import Home from "../views/Home"
 import AboutMe from "../views/AboutMe"
 import Projects from "../views/Projects"
 import Contact from "../views/Contact"
+import Footer from "../views/Footer"
 
 const HomePage = () => {
     return(
@@ -12,6 +13,7 @@ const HomePage = () => {
             <AboutMe/>
             <Projects/>
             <Contact/>
+            <Footer/>
         </>
     )
 }
