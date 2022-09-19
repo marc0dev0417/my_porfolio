@@ -4,7 +4,7 @@ import likLogo from '../utils/linkedin.png'
 import { ImageHover } from '../components/Image'
 
 import PrintService from '../ViewModel/PrintService'
-import pdfCV from '../utils/CV.pdf'
+import pdfCV from '../utils/myCV.pdf'
 
 const printService = PrintService.getPrintService()
 
