@@ -22,7 +22,7 @@ const Contact = () => {
     }
 
     return (
-        <>
+        <div id='container_contact'>
             <div className="flex justify-center items-center mt-56 p-40 gap-8 flex-wrap">
                 <div>
                     <h2 className="p-2 text-black font-medium text-3xl font-['Tanker']">Contactame</h2>
@@ -45,7 +45,7 @@ const Contact = () => {
                 </div>
             </div>
             <ToastContainer limit={1} />
-        </>
+        </div>
     )
 }
 export default observer(Contact)

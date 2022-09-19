@@ -3,7 +3,7 @@ import likLogo from '../utils/linkedin.png'
 
 const Footer = () => {
     return (
-        <>
+        <div id='container_footer'>
             <footer>
                 <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
                 <div className="sm:flex sm:items-center sm:justify-center gap-5">
@@ -14,14 +14,14 @@ const Footer = () => {
                             <img className="w-5 h-5" alt='' src={githubLogo} />
                             <span className="sr-only">Dribbbel account</span>
                     </a>
-                        <a href="https://github.com/marc0dev0417" className="text-black hover:scale-125">
+                        <a href="https://linkedin.com/in/marcobenegas" className="text-black hover:scale-125">
                         <img className="w-5 h-5" alt='' src={likLogo} />
                             <span className="sr-only">Dribbbel account</span>
                         </a>
                     </div>
                 </div>
             </footer>
-        </>
+        </div>
     )
 }
 export default Footer

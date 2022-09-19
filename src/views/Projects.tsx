@@ -12,7 +12,7 @@ const Projects = () => {
             </div>
             <div className="flex justify-center items-center mt-10 gap-44 flex-wrap">
                 {projectList.map((e, index) => 
-                    e.demoLogo === undefined ?  <CardProyect key={index}
+                    e.demoLogo === undefined || e.srcTwo === undefined?  <CardProyect key={index}
                     srcProject={e.srcProject}
                     nameProject={e.nameProject}
                     descriptionProject={e.descriptionProject}

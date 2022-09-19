@@ -20,7 +20,6 @@ class EmailService{
         })
     }
 
-
     async sendEmail(user: UserMail){
         if(user.name === '' || user.email === '' || user.message === ''){
             toast.warning("Debe rellenar los campos", {

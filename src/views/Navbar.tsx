@@ -1,7 +1,7 @@
 import 'tailwindcss/tailwind.css'
 import { HashLink, HashLink as Link } from 'react-router-hash-link';
 
-const optionsMenu: string[] = ['Inicio', 'Acerca de', 'Proyectos', 'Siguientes Proyectos', 'Contacto']
+const optionsMenu: string[] = ['Inicio', 'Acerca de', 'Proyectos', 'Contacto']
 
 const Navbar = () => {
 
@@ -20,10 +20,8 @@ const Navbar = () => {
                 return '/#container_about_me'
             case 'Proyectos':
                 return '/#container_projects'
-            case 'Siguientes Proyectos':
-                return '/siguientes_proyectos'
             case 'Contacto':
-                return '/contacto'
+                return '/#container_contact'
             default:
                 return ''
         }
